@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.subject-container {
+    display: none; /* Mặc định ẩn */
+    margin-top: 10px;
+}
+.subject-container.visible {
+    display: block; /* Hiện khi có lớp visible */
+}
+.toggle-btn {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.toggle-btn:focus {
+    outline: none;
+}
+.toggle-btn.open::after {
+    content: " "; /* Biểu tượng khi mở */
+}
+.toggle-btn::after {
+    content: " "; /* Biểu tượng khi đóng */
+}
